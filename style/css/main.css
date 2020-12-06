@@ -1,5 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Philosopher:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url("/img/sand-tile.png");
+}
+
+.header__nav {
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
+  font-size: 3rem;
+  color: #3A2E20;
+}
+
+.header__contact {
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+  font-size: 3rem;
+  color: #3A2E20;
+}
+
+.header__contact-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header__contact-link {
+  font-size: 1.5rem;
+  padding-left: 15px;
+  text-decoration: none;
+  color: #3A2E20;
+}
+
+.specialization {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

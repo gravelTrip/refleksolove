@@ -1,6 +1,21 @@
+@import 'var';
+
 * {
   margin: 0;
   padding: 0;
 }
 
-@import "header";
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  font-family: $font-lato;
+}
+
+
+@import 'header';
+@import 'specialization';
+@import 'about';
+@import 'prices';
+@import 'contact';
+
+

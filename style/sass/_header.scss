@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url('/img/sand-tile.png');
+  &__nav {
+    position:fixed;
+    top: 5vw;
+    right: 5vw;
+    font-size: 3rem;
+    color: $col-dark;
+  }
+  &__contact {
+    position: absolute;
+    top: 10vw;
+    left:5vw;
+    font-size: 3rem;
+    color: $col-dark;
+  } 
+  &__contact-box {
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  &__contact-link {
+    font-size: 1.5rem;
+    padding-left: 15px;
+    text-decoration: none;
+    color: $col-dark;
+    
+    
+  }
+}
