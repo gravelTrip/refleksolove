@@ -1,0 +1,17 @@
+.button-big {
+  width: 60vw;
+  height: 15vw;
+  border: none;
+  background-color: $col-gold;
+  border-radius: 50px;
+  margin-bottom: 6vh;
+  &:hover {
+    background-color: $col-dark;
+  }
+
+  &__link {
+    font-size: 5vw;
+    color: white;
+    text-decoration: none;
+  }
+}

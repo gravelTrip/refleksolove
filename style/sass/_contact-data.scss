@@ -1,0 +1,23 @@
+.contact-data {
+  margin: 50px 0 0 20px;
+  font-size: 11vw;
+  color: $col-dark;
+  z-index: 1;
+  
+  &__box {
+  display:flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+  &__link {
+  font-size: .5em;
+  padding-left: 10px;
+  text-decoration: none;
+  color: $col-dark;
+  &:hover {
+    color: $col-gold;
+  }
+}
+
+} 

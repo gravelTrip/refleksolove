@@ -10,39 +10,86 @@
   font-family: "Lato", sans-serif;
 }
 
+.contact-data {
+  margin: 50px 0 0 20px;
+  font-size: 11vw;
+  color: #3A2E20;
+  z-index: 1;
+}
+
+.contact-data__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-data__link {
+  font-size: .5em;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #3A2E20;
+}
+
+.contact-data__link:hover {
+  color: #A9804A;
+}
+
+.button-big {
+  width: 60vw;
+  height: 15vw;
+  border: none;
+  background-color: #A9804A;
+  border-radius: 50px;
+  margin-bottom: 6vh;
+}
+
+.button-big:hover {
+  background-color: #3A2E20;
+}
+
+.button-big__link {
+  font-size: 5vw;
+  color: white;
+  text-decoration: none;
+}
+
 .header {
   position: relative;
-  height: 100vh;
   background-image: url("/img/sand-tile.png");
+  display: flex;
+  flex-direction: column;
 }
 
 .header__nav {
   position: fixed;
   top: 5vw;
   right: 5vw;
-  font-size: 3rem;
+  font-size: 12vw;
   color: #3A2E20;
 }
 
-.header__contact {
-  position: absolute;
-  top: 10vw;
-  left: 5vw;
-  font-size: 3rem;
-  color: #3A2E20;
-}
-
-.header__contact-box {
+.header__main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
 }
 
-.header__contact-link {
-  font-size: 1.5rem;
-  padding-left: 15px;
-  text-decoration: none;
-  color: #3A2E20;
+.header__logo {
+  position: relative;
+  width: 85%;
+  top: -10%;
+}
+
+.header__title {
+  font-size: 6vw;
+  margin-bottom: 6vh;
+}
+
+.header__title-text {
+  width: 60%;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 6vh;
 }
 
 .specialization {

@@ -1,33 +1,41 @@
 .header {
   position: relative;
-  height: 100vh;
   background-image: url('/img/sand-tile.png');
+  display: flex;
+  flex-direction: column;
+  
   &__nav {
     position:fixed;
     top: 5vw;
     right: 5vw;
-    font-size: 3rem;
+    font-size: 12vw;
     color: $col-dark;
-  }
-  &__contact {
-    position: absolute;
-    top: 10vw;
-    left:5vw;
-    font-size: 3rem;
-    color: $col-dark;
-  } 
-  &__contact-box {
-    display:flex;
-    align-items: center;
-    margin-bottom: 10px;
   }
   
-  &__contact-link {
-    font-size: 1.5rem;
-    padding-left: 15px;
-    text-decoration: none;
-    color: $col-dark;
-    
-    
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  &__logo {
+    position: relative;
+    width: 85%;
+    top: -10%;
+  }
+
+  &__title {
+    font-size: 6vw;
+    margin-bottom: 6vh;
+  }
+
+  &__title-text {
+    width: 60%;
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 6vh;
+  }
+
+  
+
 }
