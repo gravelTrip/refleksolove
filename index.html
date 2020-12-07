@@ -12,37 +12,83 @@
   <div class="wrapper">
     <header class="header">
 
-      <nav class="header__nav">
+      <!-- <nav class="header__nav">
         <div class="header__nav-icon"><i class="fas fa-bars"></i></div>
-      </nav>
+      </nav> -->
 
-      <div class="contact-data">
-        <div class="contact-data__box">
+      <div class="header__contact">
+        <div class="header__contact-box">
           <i class="fas fa-phone-square-alt"></i>
-          <a class="contact-data__link" href="tel:505 806 471">505 806 471</a>
+          <a class="header__contact-link" href="tel:505 806 471">505 806 471</a>
         </div>
-        <div class="contact-data__box">
+        <div class="header__contact-box">
           <i class="fab fa-facebook-square"></i>
-          <a class="contact-data__link" href="https://www.facebook.com/refleksolove">/refleksolove</a>
+          <a class="header__contact-link" href="https://www.facebook.com/refleksolove">/refleksolove</a>
         </div>
       </div>
 
       <div class="header__main">
         <div class="header__logo">
-          <img class="header__logo-img" src="/img/mobile/logo.png" alt="">
+          <img class="header__logo-img" src="/img/mobile/logo.png"
+            srcset="/img/mobile/logo@2x.png 600w, /img/desktop/logo.png 992w, /img/desktop/logo@2x.png 1200w" alt="">
         </div>
         <h1 class="header__title">Refleksologia to Nasza pasja</h1>
         <p class="header__title-text">Umów sie już dziś i przekonaj się sam.</p>
         <button class="button-big">
-          <a class="button-big__link" href="https://www.moment.pl/galeria-urody-gdansk-2?employee_id=102946#">Rezerwacja
-            wizyty</a>
+          <a class="button-big__link" href="https://www.moment.pl/galeria-urody-gdansk-2?employee_id=102946#">REZERWACJA
+            WIZYTY</a>
         </button>
         <i class="header__arrow fas fa-angle-double-down"></i>
-        <img src="/img/mobile/Paprot.png" alt="" class="header__img-paprot">
-        <img src="/img/mobile/Liscie.png" alt="" class="header__img-liscie">
+        <img src="/img/mobile/Paprot.png" srcset="/img/mobile/Paprot@2x.png 600w, /img/desktop/Paprot.png 992w," alt=""
+          class="header__img-paprot">
+        <img src="/img/mobile/Liscie.png"
+          srcset="/img/mobile/Liscie@2x.png 600w, /img/desktop/Liscie.png 992w, /img/desktop/Liscie@2x.png 1200w" alt=""
+          class="header__img-liscie">
       </div>
     </header>
-    <section class="specialization"></section>
+
+    <section class="specialization">
+      <h2 class="specialization__title">Moje Specjalizacje</h2>
+      <article class="specialization__article-box specialization__article-box--green">
+        <h3 class="specialization__article-title">Refleksologia</h3>
+        <p class="specialization__article-text">
+          Zabieg ten polega na uciskaniu punktów refleksologicznych zwanych receptorami, które znajdują się na naszych
+          stopach. Każdy z tych punktów odpowiada danemu organowi lub części ciała. Stopy są miniaturową mapą naszego
+          ...
+        </p>
+        <button class="specialization__article-btn specialization__article-btn--green">CZYTAJ WIECEJ...</button>
+        <img src="/img/mobile/icon-gr.png" srcset="/img/mobile/icon-gr@2x.png 600w" alt=""
+          class="specialization__article-icon">
+
+      </article>
+
+      <article class="specialization__article-box specialization__article-box--gold">
+        <h3 class="specialization__article-title">Świecowanie</h3>
+        <p class="specialization__article-text">
+          Świecowanie to nie tylko świetny zabieg który pomoże w usunięciu zalegającej woskowiny z uszu ale również
+          pomoże na wszelkiego rodzaju dolegliwości w obszarze naszej głowy. Polecany jest przy zwykłych
+          przeziębieniach, zapaleniach ...
+        </p>
+        <button class="specialization__article-btn specialization__article-btn--gold">CZYTAJ WIECEJ...</button>
+        <img src="/img/mobile/icon-gl.png" srcset="/img/mobile/icon-gl@2x.png 600w" alt=""
+          class="specialization__article-icon">
+
+      </article>
+
+      <article class="specialization__article-box specialization__article-box--dark">
+        <h3 class="specialization__article-title">Bańkowanie </h3>
+        <p class="specialization__article-text">
+          Stawianie baniek to jedna z najstarszych metod terapeutycznych stosowana przy wspomaganiu tradycyjnego
+          leczenia. Jest to bezpieczna i nieinwazyjna metoda która bez stosowania farmaceutyków pozwala osiągnąć sukcesy
+          ...
+        </p>
+        <button class="specialization__article-btn specialization__article-btn--dark">CZYTAJ WIECEJ...</button>
+        <img src="/img/mobile/icon-dk.png" srcset="/img/mobile/icon-dk@2x.png 600w" alt=""
+          class="specialization__article-icon">
+
+      </article>
+    </section>
+
     <section class="about"></section>
     <section class="price"></section>
     <footer class="contact"></footer>

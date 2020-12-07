@@ -1,3 +1,135 @@
 .specialization {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include size('md') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__title {
+    margin-top: 9vw;
+    margin-bottom: 5vw;
+    font-family: $font-phil;
+    font-size: 8vw;
+    color: $col-dark;
+    @include size('lg') {
+      font-size: 6vw;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__article-box {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    margin-bottom: 5vw;
+    border: none;
+    border-radius: 15px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    @include size('md') {
+      width: 45vw;
+      height: 60vw;
+    }
+    @include size('lg') {
+      width: 30vw;
+      height: 45vw;
+    }
+
+
+    &--green {
+      background-color: rgba(155, 193, 162, 0.5);
+    }
+    &--gold {
+      background-color: rgba(169, 128, 74, 0.5);
+    }
+    &--dark {
+      background-color: rgba(58, 46, 32, 0.3);
+    }
+  }
+  &__article-title {
+    padding: 3vw 0;
+    width: 95%;
+    border-bottom: 2px solid rgba(58, 46, 32, 0.3);
+    text-align: center;
+    font-size: 6vw;
+    font-weight: normal;
+    @include size('lg') {
+      font-size: 4vw;
+    }
+  }
+  &__article-text {
+    width: 95%;
+    margin-top: 2vw;
+    font-size: 5vw;
+    @include size('md') {
+      font-size: 3vw;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+    }
+  }
+
+  &__article-btn {
+    margin-top: 5vw;
+    width: 55vw;
+    height: 8vw;
+    border: none;
+    border-radius: 15px;
+    font-size: 5vw;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    @include size('md') {
+      font-size: 3vw;
+      width: 35vw;
+      height: 6vw;
+      margin-bottom: 3vw;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+      width: 22vw;
+      height: 5vw;
+      margin-bottom: 3vw;
+    }
+
+    &--green {
+      background-color: rgba(155, 193, 162, 1);
+      &:hover {
+        background-color: rgba(155, 193, 162, 0.3);
+        color: $col-dark;
+      }
+    }
+    &--gold {
+      background-color: rgba(169, 128, 74, 1);
+      &:hover {
+        background-color: rgba(169, 128, 74, 0.3);
+        color: $col-dark;
+      }
+    }
+    &--dark {
+      background-color: rgba(58, 46, 32, 1);
+      &:hover {
+        background-color: rgba(58, 46, 32, 0.3);
+        color: $col-dark;
+      }
+    }
+  }
+  &__article-icon {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include size('md') {
+      width: 70%;
+    }
+  }
+
 }

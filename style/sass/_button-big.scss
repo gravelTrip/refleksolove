@@ -8,10 +8,25 @@
   &:hover {
     background-color: $col-dark;
   }
+  @include size('md') {
+    width: 40vw;
+  height: 10vw;
+  }
+  @include size('lg') {
+    width: 30vw;
+  height: 8vw;
+  }
 
   &__link {
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: white;
     text-decoration: none;
+    letter-spacing: 1px;
+    @include size('md') {
+      font-size: 3vw;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+    }
   }
 }

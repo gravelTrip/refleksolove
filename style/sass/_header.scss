@@ -11,6 +11,39 @@
     font-size: 12vw;
     color: $col-dark;
   }
+
+  &__contact {
+    margin: 50px 0 0 30px;
+    font-size: 11vw;
+    color: $col-dark;
+    z-index: 1;
+    @include size('md') {
+      font-size: 7vw;
+      margin: 50px 0 0 50px;
+    }
+    @include size('lg') {
+      position: absolute;
+      margin: 0;
+      top: 50px;
+      right: 50px;
+      font-size: 5vw;
+    }
+  }   
+    &__contact-box {
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+    &__contact-link {
+    font-size: .5em;
+    padding-left: 10px;
+    text-decoration: none;
+    color: $col-dark;
+    &:hover {
+      color: $col-gold;
+    }
+  }
   
   &__main {
     display: flex;
@@ -21,16 +54,33 @@
 
   &__logo {
     text-align: center;
+    @include size('xl') {
+      background-color:rgb(243, 78, 161);
+    }
   }
   &__logo-img {
     position: relative;
     width: 85vw;
     top: -10vw;
+    @include size('md') {
+      width: 65vw;
+    }
+    @include size('lg') {
+      width: 40vw;
+      top:0;
+      margin-top: 5vw;
+    }
   }
 
   &__title {
     font-size: 6vw;
     margin-bottom: 3vh;
+    @include size('md') {
+      font-size: 4vw;
+    }
+    @include size('lg') {
+      font-size: 3vw;
+    }
     
   }
 
@@ -39,12 +89,25 @@
     font-size: 5vw;
     text-align: center;
     margin-bottom: 3vh;
+    @include size('md') {
+      font-size: 3vw;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+    }
   }
 
   &__arrow {
     position: relative;
     font-size: 15vw;
     animation: arrow 2s infinite;
+    @include size('md') {
+      font-size: 10vw;
+    }
+    @include size('lg') {
+      font-size: 5vw;
+      animation: arrow_1024 2s infinite;
+    }
   }
 
   &__img-paprot {
@@ -52,18 +115,26 @@
     width: 70vw;
     left: -30vw;
     bottom: -20vw;
-    
+    @include size('lg') {
+      width: 85vw;
+      bottom: -18vw;
+    }
   }
 
   &__img-liscie {
     position: absolute;
     width: 62vw;
-    right: -30vw;
+    right: -40vw;
     bottom: -10vw;
-    
+    @include size('lg') {
+      width: 45vw;
+      right: -20vw;
+      bottom: -5vw;
+    }
   }
 
 }
+
 
 @keyframes arrow {
   0% {
@@ -71,10 +142,26 @@
   }
 
   50% {
+    
     top: 4vw;
   }
 
   100% {
     top: -2vw;
+  }
+}
+
+@keyframes arrow_1024 {
+  0% {
+    top: 0vw;
+  }
+
+  50% {
+    
+    top: 2vw;
+  }
+
+  100% {
+    top: 0vw;
   }
 }
