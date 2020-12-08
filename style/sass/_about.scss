@@ -1,0 +1,37 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  &__title {
+    
+    font-family: $font-phil;
+    font-size: 10vw;
+    align-self: flex-end;
+    margin-right: 8vw;
+  }
+
+  &__img-profile {
+    
+    width: 40vw;
+  }
+
+  &__text {
+    border-radius: 15px;
+    width: 80vw;
+    padding: 10px;
+    margin-top: 2vw;;
+    background-image: url("/img/sand-tile.png");
+    font-size: 5vw;
+  }
+
+  &__img-decor {
+    
+    position: absolute;
+    width: 60vw;
+    top: -5vw;
+    left: -15vw;
+  }
+}

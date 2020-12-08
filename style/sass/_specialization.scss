@@ -19,6 +19,11 @@
       width: 100%;
       text-align: center;
     }
+    @include size('xl') {
+      font-size: 4vw;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__article-box {
@@ -38,7 +43,11 @@
     }
     @include size('lg') {
       width: 30vw;
-      height: 45vw;
+      height: 42vw;
+    }
+    @include size('xl') {
+      width: 28vw;
+      height: 28vw;
     }
 
 
@@ -62,6 +71,11 @@
     @include size('lg') {
       font-size: 4vw;
     }
+
+    @include size('xl') {
+      padding: 1.5vw 0;
+      font-size: 3vw;
+    }
   }
   &__article-text {
     width: 95%;
@@ -73,10 +87,13 @@
     @include size('lg') {
       font-size: 2vw;
     }
+    @include size('xl') {
+      font-size: 1.5vw;
+    }
   }
 
   &__article-btn {
-    margin-top: 5vw;
+    margin-top: 2vw;
     width: 55vw;
     height: 8vw;
     border: none;
@@ -96,6 +113,12 @@
       width: 22vw;
       height: 5vw;
       margin-bottom: 3vw;
+    }
+
+    @include size('xl') {
+      font-size: 1.5vw;
+      width: 18vw;
+      margin-bottom: 1.5vw;
     }
 
     &--green {
@@ -129,6 +152,9 @@
     transform: translate(-50%, -50%);
     @include size('md') {
       width: 70%;
+    }
+    @include size('xl') {
+      width: 50%;
     }
   }
 

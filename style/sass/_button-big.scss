@@ -16,6 +16,10 @@
     width: 30vw;
   height: 8vw;
   }
+  @include size('lg') {
+    width: 20vw;
+  height: 6vw;
+  }
 
   &__link {
     font-size: 4.5vw;
@@ -27,6 +31,9 @@
     }
     @include size('lg') {
       font-size: 2vw;
+    }
+    @include size('lg') {
+      font-size: 1.5vw;
     }
   }
 }

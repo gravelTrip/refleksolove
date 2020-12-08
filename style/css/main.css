@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -37,6 +38,13 @@
   }
 }
 
+@media (min-width: 992px) {
+  .button-big {
+    width: 20vw;
+    height: 6vw;
+  }
+}
+
 .button-big__link {
   font-size: 4.5vw;
   color: white;
@@ -53,6 +61,12 @@
 @media (min-width: 992px) {
   .button-big__link {
     font-size: 2vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .button-big__link {
+    font-size: 1.5vw;
   }
 }
 
@@ -95,6 +109,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .header__contact {
+    font-size: 4vw;
+  }
+}
+
 .header__contact-box {
   display: flex;
   align-items: center;
@@ -123,12 +143,6 @@
   text-align: center;
 }
 
-@media (min-width: 1200px) {
-  .header__logo {
-    background-color: #f34ea1;
-  }
-}
-
 .header__logo-img {
   position: relative;
   width: 85vw;
@@ -144,6 +158,14 @@
 @media (min-width: 992px) {
   .header__logo-img {
     width: 40vw;
+    top: 0;
+    margin-top: 5vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__logo-img {
+    width: 30vw;
     top: 0;
     margin-top: 5vw;
   }
@@ -166,6 +188,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 2vw;
+  }
+}
+
 .header__title-text {
   width: 60vw;
   font-size: 5vw;
@@ -182,6 +210,12 @@
 @media (min-width: 992px) {
   .header__title-text {
     font-size: 2vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__title-text {
+    font-size: 1.5vw;
   }
 }
 
@@ -204,6 +238,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .header__arrow {
+    font-size: 4vw;
+  }
+}
+
 .header__img-paprot {
   position: absolute;
   width: 70vw;
@@ -213,8 +253,16 @@
 
 @media (min-width: 992px) {
   .header__img-paprot {
-    width: 85vw;
+    width: 80vw;
     bottom: -18vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__img-paprot {
+    width: 65vw;
+    bottom: -15vw;
+    left: -20vw;
   }
 }
 
@@ -227,8 +275,16 @@
 
 @media (min-width: 992px) {
   .header__img-liscie {
-    width: 45vw;
+    width: 42vw;
     right: -20vw;
+    bottom: -5vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__img-liscie {
+    width: 35vw;
+    right: -15vw;
     bottom: -5vw;
   }
 }
@@ -287,6 +343,14 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .specialization__title {
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .specialization__article-box {
   position: relative;
   width: 80vw;
@@ -309,7 +373,14 @@
 @media (min-width: 992px) {
   .specialization__article-box {
     width: 30vw;
-    height: 45vw;
+    height: 42vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .specialization__article-box {
+    width: 28vw;
+    height: 28vw;
   }
 }
 
@@ -340,6 +411,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .specialization__article-title {
+    padding: 1.5vw 0;
+    font-size: 3vw;
+  }
+}
+
 .specialization__article-text {
   width: 95%;
   margin-top: 2vw;
@@ -358,8 +436,14 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .specialization__article-text {
+    font-size: 1.5vw;
+  }
+}
+
 .specialization__article-btn {
-  margin-top: 5vw;
+  margin-top: 2vw;
   width: 55vw;
   height: 8vw;
   border: none;
@@ -385,6 +469,14 @@
     width: 22vw;
     height: 5vw;
     margin-bottom: 3vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .specialization__article-btn {
+    font-size: 1.5vw;
+    width: 18vw;
+    margin-bottom: 1.5vw;
   }
 }
 
@@ -428,5 +520,45 @@
   .specialization__article-icon {
     width: 70%;
   }
+}
+
+@media (min-width: 1440px) {
+  .specialization__article-icon {
+    width: 50%;
+  }
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__title {
+  font-family: "Philosopher", sans-serif;
+  font-size: 10vw;
+  align-self: flex-end;
+  margin-right: 8vw;
+}
+
+.about__img-profile {
+  width: 40vw;
+}
+
+.about__text {
+  border-radius: 15px;
+  width: 80vw;
+  padding: 10px;
+  margin-top: 2vw;
+  background-image: url("/img/sand-tile.png");
+  font-size: 5vw;
+}
+
+.about__img-decor {
+  position: absolute;
+  width: 60vw;
+  top: -5vw;
+  left: -15vw;
 }
 /*# sourceMappingURL=main.css.map */
