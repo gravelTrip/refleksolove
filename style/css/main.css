@@ -590,6 +590,7 @@
 
 .about__img-profile {
   width: 40vw;
+  height: 100%;
 }
 
 @media (min-width: 992px) {
@@ -662,5 +663,52 @@
     top: 13vw;
     left: -15vw;
   }
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vw;
+  position: relative;
+  margin-bottom: 10vw;
+}
+
+.price__misa {
+  position: absolute;
+  width: 90%;
+  top: -20vw;
+  left: 4.5vw;
+  z-index: -1;
+}
+
+.price__title {
+  position: relative;
+  top: 20vw;
+  left: -30vw;
+  font-size: 7vw;
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 2vw;
+}
+
+.price__boxes {
+  display: flex;
+}
+
+.price__box {
+  position: relative;
+  font-size: 4.2vw;
+  top: 7vw;
+  left: -1.5vw;
+  width: 28vw;
+  text-align: center;
+}
+
+.price__box-icon {
+  position: absolute;
+  width: 25vw;
+  top: 0vw;
+  left: 1vw;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
