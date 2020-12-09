@@ -3,19 +3,60 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include size('lg') {
+    justify-content: flex-end;
+  }
+  
 
 
-  &__title {
-    
+  &__title { 
     font-family: $font-phil;
     font-size: 10vw;
     align-self: flex-end;
     margin-right: 8vw;
+    @include size('lg') {
+      display: none;
+    }
+  }
+
+  &__span {
+    display: none;
+    @include size('lg') {
+      display: block;
+      font-family: $font-phil;
+    font-size: 4vw;
+      
+    }
+  }
+
+  &__motto {
+    display: none;
+    @include size('lg') {
+      display: block;
+      width: 54vw;
+      margin-top: 2vw;
+      margin-left: 6vw;
+
+      font-family: $font-phil;
+      font-size: 4vw;
+      color: $col-gold;
+    }
+    @include size('xl') {
+      width: 50vw;
+     
+    }
   }
 
   &__img-profile {
-    
     width: 40vw;
+    @include size('lg') {
+      width: 25vw;
+      margin: 2vw 8vw 0 4vw;
+    }
+    @include size('xl') {
+      width: 20vw;
+      margin: 2vw 12vw 0 4vw;
+    }
   }
 
   &__text {
@@ -25,13 +66,39 @@
     margin-top: 2vw;;
     background-image: url("/img/sand-tile.png");
     font-size: 5vw;
+    @include size('md') {
+      font-size: 3vw;
+      width: 80vw;
+    }
+    @include size('lg') {
+      position: relative;
+      top: -15vw;
+      right: 30vw;
+      font-size: 1.8vw;
+      width: 50vw;
+      padding: 20px;
+    }
+    @include size('xl') {
+      font-size: 1.2vw;
+      width: 35vw;
+      top: -12vw;
+    }
   }
 
   &__img-decor {
-    
     position: absolute;
     width: 60vw;
     top: -5vw;
     left: -15vw;
+    @include size('lg') {
+      width: 40vw;
+      top: 20vw;
+      left: -20vw;
+    }
+    @include size('xl') {
+      width: 40vw;
+      top: 13vw;
+      left: -15vw;
+    }
   }
 }
