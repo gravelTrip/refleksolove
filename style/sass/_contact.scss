@@ -1,0 +1,60 @@
+.contact {
+  background-image: url('/img/sand-tile.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title{
+    font-size: 10vw;
+    font-family: $font-phil;
+    color: $col-dark;
+    margin-bottom: 4vw;
+  }
+
+  &__box {
+    display:flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 7vw;
+    text-decoration: none;
+    color: $col-dark;
+    cursor: pointer;
+  }
+
+  &__icon {
+    font-size: 15vw;
+    margin:2vw 4vw 0vw 0;
+    color: $col-dark;
+  }
+
+  &__app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__app-info {
+    font-weight: bold;
+    color: $col-dark;
+  }
+  &__app-google {
+    position: relative;
+    top: 0;
+    left: -4vw;
+    width:40vw;
+    
+  }
+  &__app-apple {
+    width:35vw;
+  }
+
+  &__footer {
+    border-top: 2px solid $col-dark;
+    width: 100%;
+    text-align: center;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+    color: $col-dark;
+  }
+}

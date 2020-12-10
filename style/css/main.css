@@ -46,7 +46,7 @@
 }
 
 .button-big__link {
-  font-size: 4.5vw;
+  font-size: 4vw;
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
@@ -68,6 +68,10 @@
   .button-big__link {
     font-size: 1.5vw;
   }
+}
+
+.button-big--contact {
+  margin-top: 5vw;
 }
 
 .header {
@@ -546,6 +550,7 @@
   font-size: 10vw;
   align-self: flex-end;
   margin-right: 8vw;
+  color: #3A2E20;
 }
 
 @media (min-width: 992px) {
@@ -671,7 +676,7 @@
   justify-content: center;
   height: 80vw;
   position: relative;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 .price__misa {
@@ -705,6 +710,7 @@
   font-size: 7vw;
   font-family: "Philosopher", sans-serif;
   margin-bottom: 2vw;
+  color: #3A2E20;
 }
 
 @media (min-width: 992px) {
@@ -772,5 +778,69 @@
   .price__box-icon {
     width: 17vw;
   }
+}
+
+.contact {
+  background-image: url("/img/sand-tile.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: 10vw;
+  font-family: "Philosopher", sans-serif;
+  color: #3A2E20;
+  margin-bottom: 4vw;
+}
+
+.contact__box {
+  display: flex;
+  align-items: center;
+}
+
+.contact__link {
+  font-size: 7vw;
+  text-decoration: none;
+  color: #3A2E20;
+  cursor: pointer;
+}
+
+.contact__icon {
+  font-size: 15vw;
+  margin: 2vw 4vw 0vw 0;
+  color: #3A2E20;
+}
+
+.contact__app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__app-info {
+  font-weight: bold;
+  color: #3A2E20;
+}
+
+.contact__app-google {
+  position: relative;
+  top: 0;
+  left: -4vw;
+  width: 40vw;
+}
+
+.contact__app-apple {
+  width: 35vw;
+}
+
+.contact__footer {
+  border-top: 2px solid #3A2E20;
+  width: 100%;
+  text-align: center;
+  padding-top: 3vw;
+  margin-bottom: 3vw;
+  color: #3A2E20;
 }
 /*# sourceMappingURL=main.css.map */

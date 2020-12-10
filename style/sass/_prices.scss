@@ -4,7 +4,7 @@
   justify-content: center;
   height: 80vw;
   position: relative;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 
   &__misa {
     position: absolute;
@@ -31,6 +31,7 @@
     font-size: 7vw;
     font-family: $font-phil;
     margin-bottom: 2vw;
+    color: $col-dark;
     @include size('lg') {
       top: -4.5vw;
       left: 10vw;

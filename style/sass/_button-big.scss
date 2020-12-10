@@ -22,7 +22,7 @@
   }
 
   &__link {
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
@@ -35,5 +35,8 @@
     @include size('lg') {
       font-size: 1.5vw;
     }
+  }
+  &--contact {
+    margin-top: 5vw;
   }
 }
