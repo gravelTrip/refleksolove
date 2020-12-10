@@ -12,6 +12,16 @@
     top: -20vw;
     left: 4.5vw;
     z-index: -1;
+    @include size('lg') {
+      width: 80%;
+      top: -40vw;
+      left: 10vw;
+    }
+    @include size('xl') {
+      width: 60%;
+      top: -28vw;
+      left: 20vw;
+    }
   }
 
   &__title {
@@ -21,6 +31,16 @@
     font-size: 7vw;
     font-family: $font-phil;
     margin-bottom: 2vw;
+    @include size('lg') {
+      top: -4.5vw;
+      left: 10vw;
+      font-size: 6vw;
+    }
+    @include size('xl') {
+      top: -2vw;
+      left: 9vw;
+      font-size: 5vw;
+    }
   }
 
   &__boxes{
@@ -34,6 +54,18 @@
     left: -1.5vw;
     width: 28vw;
     text-align: center;
+    @include size('lg') {
+      font-size: 3.5vw;
+      top: 6vw;
+      left: -10vw;
+      width: 25vw;
+    }
+    @include size('xl') {
+      font-size: 2.5vw;
+      top: 6vw;
+      left: -8.5vw;
+      width: 19vw;
+    }
   }
 
   &__box-icon {
@@ -42,5 +74,12 @@
     top: 0vw;
     left:1vw;
     z-index: -1;
+    @include size('lg') {
+      width: 22vw;
+    }
+
+    @include size('xl') {
+      width: 17vw;
+    }
   }
 }

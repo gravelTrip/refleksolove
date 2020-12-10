@@ -682,6 +682,22 @@
   z-index: -1;
 }
 
+@media (min-width: 992px) {
+  .price__misa {
+    width: 80%;
+    top: -40vw;
+    left: 10vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price__misa {
+    width: 60%;
+    top: -28vw;
+    left: 20vw;
+  }
+}
+
 .price__title {
   position: relative;
   top: 20vw;
@@ -689,6 +705,22 @@
   font-size: 7vw;
   font-family: "Philosopher", sans-serif;
   margin-bottom: 2vw;
+}
+
+@media (min-width: 992px) {
+  .price__title {
+    top: -4.5vw;
+    left: 10vw;
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price__title {
+    top: -2vw;
+    left: 9vw;
+    font-size: 5vw;
+  }
 }
 
 .price__boxes {
@@ -704,11 +736,41 @@
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  .price__box {
+    font-size: 3.5vw;
+    top: 6vw;
+    left: -10vw;
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price__box {
+    font-size: 2.5vw;
+    top: 6vw;
+    left: -8.5vw;
+    width: 19vw;
+  }
+}
+
 .price__box-icon {
   position: absolute;
   width: 25vw;
   top: 0vw;
   left: 1vw;
   z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .price__box-icon {
+    width: 22vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price__box-icon {
+    width: 17vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
