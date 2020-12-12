@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   @include size('lg') {
     justify-content: flex-start;
   }
@@ -47,6 +48,9 @@
     text-decoration: none;
     color: $col-dark;
     cursor: pointer;
+    &:hover {
+      color: $col-gold;
+    }
     @include size('md') {
       font-size: 6vw;
     }

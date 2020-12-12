@@ -5,6 +5,7 @@
   height: 80vw;
   position: relative;
   margin-bottom: 5vw;
+  z-index: -1;
   @include size('lg') {
     margin-bottom: -25vw;
   }
