@@ -1,13 +1,40 @@
 .contact {
   background-image: url('/img/sand-tile.png');
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include size('lg') {
+    justify-content: flex-start;
+  }
+
   &__title{
     font-size: 10vw;
     font-family: $font-phil;
     color: $col-dark;
     margin-bottom: 4vw;
+    width: 100%;
+    text-align: center;
+    @include size('md') {
+      font-size: 8vw;
+      margin-bottom: 1vw;
+    }
+    @include size('lg') {
+      font-size: 8vw;
+      width: 100vw;
+      text-align: center;
+    }
+    @include size('xl') {
+      font-size: 5vw;
+    }
+  }
+
+  &__boxes{
+    @include size('lg') {
+      width: 49vw;
+      padding-left: 14vw;
+      padding-top: 1.8vw;
+    }
+    
   }
 
   &__box {
@@ -20,12 +47,46 @@
     text-decoration: none;
     color: $col-dark;
     cursor: pointer;
+    @include size('md') {
+      font-size: 6vw;
+    }
+    @include size('lg') {
+      font-size: 4vw;
+    }
+    @include size('lg') {
+      font-size: 3vw;
+    }
   }
 
   &__icon {
     font-size: 15vw;
     margin:2vw 4vw 0vw 0;
     color: $col-dark;
+    @include size('md') {
+      font-size: 12vw;
+      margin:1vw 4vw 0vw 0;
+    }
+    @include size('lg') {
+      font-size: 9vw;
+      margin:1vw 3vw 0vw 0;
+    }
+    @include size('lg') {
+      font-size: 6vw;
+      margin:0vw 2vw 0vw 0;
+    }
+  }
+
+  &__buttons {
+    @include size('lg') {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 49vw;
+    }
+  }
+  &__button {
+
+    text-align: center;
   }
 
   &__app {
@@ -37,16 +98,43 @@
   &__app-info {
     font-weight: bold;
     color: $col-dark;
+    @include size('md') {
+      font-size: 4vw;
+      width: 100%;
+      text-align: center;
+    }
+    @include size('lg') {
+      font-size: 2.5vw;
+      width: 100%;
+    }
+    @include size('xl') {
+      font-size: 1.5vw;
+    }
   }
   &__app-google {
     position: relative;
     top: 0;
     left: -4vw;
     width:40vw;
-    
+    @include size('lg') {
+      width:17vw;
+      left: -1vw;
+    }
+    @include size('xl') {
+      width:12vw;
+      
+    }
   }
   &__app-apple {
     width:35vw;
+    @include size('lg') {
+      width:15vw;
+    }
+    @include size('xl') {
+      width:10vw;
+     
+    }
+
   }
 
   &__footer {
@@ -56,5 +144,13 @@
     padding-top: 3vw;
     margin-bottom: 3vw;
     color: $col-dark;
+    @include size('md') {
+      font-size: 3vw;
+    }
+    @include size('xl') {
+      font-size: 1vw;
+      padding-top: 1vw;
+    margin-bottom: 1vw;
+    }
   }
 }

@@ -5,6 +5,12 @@
   height: 80vw;
   position: relative;
   margin-bottom: 5vw;
+  @include size('lg') {
+    margin-bottom: -25vw;
+  }
+  @include size('xl') {
+    margin-bottom: -38vw;
+  }
 
   &__misa {
     position: absolute;

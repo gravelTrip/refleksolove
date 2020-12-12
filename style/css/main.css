@@ -17,7 +17,7 @@
   border: none;
   background-color: #A9804A;
   border-radius: 50px;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 
 .button-big:hover {
@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
   .button-big {
     width: 20vw;
     height: 6vw;
@@ -49,7 +49,7 @@
   font-size: 4vw;
   color: white;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
@@ -60,11 +60,11 @@
 
 @media (min-width: 992px) {
   .button-big__link {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
   .button-big__link {
     font-size: 1.5vw;
   }
@@ -72,6 +72,12 @@
 
 .button-big--contact {
   margin-top: 5vw;
+}
+
+@media (min-width: 992px) {
+  .button-big--contact {
+    margin-top: 1vw;
+  }
 }
 
 .header {
@@ -679,6 +685,18 @@
   margin-bottom: 5vw;
 }
 
+@media (min-width: 992px) {
+  .price {
+    margin-bottom: -25vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .price {
+    margin-bottom: -38vw;
+  }
+}
+
 .price__misa {
   position: absolute;
   width: 90%;
@@ -783,8 +801,14 @@
 .contact {
   background-image: url("/img/sand-tile.png");
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    justify-content: flex-start;
+  }
 }
 
 .contact__title {
@@ -792,6 +816,37 @@
   font-family: "Philosopher", sans-serif;
   color: #3A2E20;
   margin-bottom: 4vw;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact__title {
+    font-size: 8vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__title {
+    font-size: 8vw;
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__title {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__boxes {
+    width: 49vw;
+    padding-left: 14vw;
+    padding-top: 1.8vw;
+  }
 }
 
 .contact__box {
@@ -806,10 +861,62 @@
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .contact__link {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__link {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__link {
+    font-size: 3vw;
+  }
+}
+
 .contact__icon {
   font-size: 15vw;
   margin: 2vw 4vw 0vw 0;
   color: #3A2E20;
+}
+
+@media (min-width: 768px) {
+  .contact__icon {
+    font-size: 12vw;
+    margin: 1vw 4vw 0vw 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__icon {
+    font-size: 9vw;
+    margin: 1vw 3vw 0vw 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__icon {
+    font-size: 6vw;
+    margin: 0vw 2vw 0vw 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49vw;
+  }
+}
+
+.contact__button {
+  text-align: center;
 }
 
 .contact__app {
@@ -824,6 +931,27 @@
   color: #3A2E20;
 }
 
+@media (min-width: 768px) {
+  .contact__app-info {
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__app-info {
+    font-size: 2.5vw;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__app-info {
+    font-size: 1.5vw;
+  }
+}
+
 .contact__app-google {
   position: relative;
   top: 0;
@@ -831,8 +959,33 @@
   width: 40vw;
 }
 
+@media (min-width: 992px) {
+  .contact__app-google {
+    width: 17vw;
+    left: -1vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__app-google {
+    width: 12vw;
+  }
+}
+
 .contact__app-apple {
   width: 35vw;
+}
+
+@media (min-width: 992px) {
+  .contact__app-apple {
+    width: 15vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__app-apple {
+    width: 10vw;
+  }
 }
 
 .contact__footer {
@@ -842,5 +995,19 @@
   padding-top: 3vw;
   margin-bottom: 3vw;
   color: #3A2E20;
+}
+
+@media (min-width: 768px) {
+  .contact__footer {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__footer {
+    font-size: 1vw;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

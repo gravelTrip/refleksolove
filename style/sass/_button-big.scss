@@ -4,39 +4,41 @@
   border: none;
   background-color: $col-gold;
   border-radius: 50px;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
   &:hover {
     background-color: $col-dark;
   }
   @include size('md') {
     width: 40vw;
-  height: 10vw;
+    height: 10vw;
   }
   @include size('lg') {
     width: 30vw;
-  height: 8vw;
+    height: 8vw;
   }
-  @include size('lg') {
+  @include size('xl') {
     width: 20vw;
-  height: 6vw;
+    height: 6vw;
   }
 
   &__link {
     font-size: 4vw;
     color: white;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     @include size('md') {
       font-size: 3vw;
     }
     @include size('lg') {
-      font-size: 2vw;
+      font-size: 2.5vw;
     }
-    @include size('lg') {
+    @include size('xl') {
       font-size: 1.5vw;
     }
   }
   &--contact {
     margin-top: 5vw;
-  }
+    @include size('lg') {
+      margin-top: 1vw;
+  }}
 }
