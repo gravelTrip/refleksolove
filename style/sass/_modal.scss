@@ -25,9 +25,22 @@
 
   &__icon {
     position: absolute;
-    font-size: 8vw;
+    font-size: 10vw;
     right: 5vw;
     top: 3vw;
+    cursor: pointer;
+    @include size('md') {
+      font-size: 8vw;
+      top: 1vw;
+    }
+    @include size('lg') {
+      font-size: 5vw;
+      top: 1vw;
+    }
+    @include size('xl') {
+      font-size: 3vw;
+      top: 0.8vw;
+    }
   }
 
   &__title {
@@ -35,11 +48,58 @@
     text-align: center;
     border-bottom: 1px solid black;
     margin-bottom: 2vw;
+    font-size: 8vw;
+    @include size('md') {
+      font-size: 6vw;
+    }
+    @include size('lg') {
+      font-size: 4vw;
+    }
+    @include size('xl') {
+      font-size: 2.5vw;
+    }
+    
+  }
+
+  &__text {
+    font-size: 5vw;
+    @include size('md') {
+      font-size: 3vw;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+    }
+    @include size('xl') {
+      font-size: 1.5vw;
+    }
   }
 
   &__list {
     margin-left: 10px;
     list-style: none;
+    font-size: 5vw;
+    @include size('md') {
+      font-size: 3vw;
+      margin-left: 25px;
+    }
+    @include size('lg') {
+      font-size: 2vw;
+    }
+    @include size('xl') {
+      font-size: 1.5vw;
+    }
+  }
+  &__list-title {
+    font-size: 6vw;
+    @include size('md') {
+      font-size: 4vw;
+    }
+    @include size('lg') {
+      font-size: 3vw;
+    }
+    @include size('xl') {
+      font-size: 2vw;
+    }
   }
   &__list-item {
     position: relative;
@@ -50,8 +110,18 @@
     border-radius: 50px;
     padding: 3vw 6vw;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
+    cursor: pointer;
+    @include size('lg') {
+      font-size: 2vw;
+      padding: 1.5vw 3vw;
+    }
+    @include size('lg') {
+      font-size: 1.5vw;
+      padding: 1vw 2.5vw;
+    }
+    
     &--green {
       background-color: rgba(155, 193, 162, 1);
       &:hover {
@@ -78,8 +148,24 @@
 .fa-plus-circle,
  .fa-minus-circle {
   position: absolute;
-  top: 2px;
-  left: -20px;
+  top: 1.8vw;
+  left: -4vw;
+  font-size: 3.1vw;
+  @include size('md') {
+    font-size: 2vw;
+    top: 1vw;
+    left: -3vw;
+  }
+  @include size('lg') {
+    font-size: 1.5vw;
+    top: 0.6vw;
+    left: -2vw;
+  }
+  @include size('xl') {
+    font-size: 1vw;
+    top: 0.4vw;
+    left: -1.4vw;
+  }
 }
 
 .active {

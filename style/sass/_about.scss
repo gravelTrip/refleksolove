@@ -38,12 +38,13 @@
       margin-top: 2vw;
       margin-left: 6vw;
 
-      font-family: $font-phil;
+      font-family: 'Times New Roman', Times, serif;
       font-size: 4vw;
       color: $col-gold;
     }
     @include size('xl') {
       width: 50vw;
+      font-size: 3.5vw;
      
     }
   }
